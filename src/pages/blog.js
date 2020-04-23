@@ -8,7 +8,10 @@ import blogStyles from './blog.module.scss'
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            allContentfulBlogPost ( sort: { fields: publishedDate, order: DESC } ) {
+            allContentfulBlogPost ( 
+                filter: { node_locale: { eq:"en-US" }}
+                sort: { fields: publishedDate, order: DESC } 
+                ) {
                 edges {
                     node {
                         title
