@@ -24,9 +24,9 @@ const Header = () => {
             </h1>
             <div className={headerStyles.navList}>
                 <p><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link></p>
-                <p><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">blog</Link></p>
+                <p><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">Blog</Link></p>
                 <p><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link></p>
-                <p><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact me</Link></p>
+                <p><Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact Me</Link></p>
             </div>
         </header>
     )
